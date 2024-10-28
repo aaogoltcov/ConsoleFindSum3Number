@@ -1,12 +1,12 @@
 ﻿int[] numbersArray = Enumerable.Range(1, 50).ToArray();
 
-CollectionHelper.FindCoupleSumOperands(10, numbersArray);
-CollectionHelper.FindCoupleSumOperands(15, numbersArray);
-CollectionHelper.FindCoupleSumOperands(20, numbersArray);
+CollectionHelper.FindTripleSumOperands(10, numbersArray);
+CollectionHelper.FindTripleSumOperands(15, numbersArray);
+CollectionHelper.FindTripleSumOperands(20, numbersArray);
 
 public static class CollectionHelper
 {
-    public static void FindCoupleSumOperands(int targetNumber, int[] numbersArray, bool isInner = false)
+    public static void FindTripleSumOperands(int targetNumber, int[] numbersArray, bool isInner = false)
     {
         var operands = new HashSet<int>();
 
